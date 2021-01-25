@@ -25,5 +25,9 @@ function upon(){
 
 function minus(){
     var f = document.getElementById("input");
-    
+}
+
+function zakat(){
+    var g = document.getElementById("input");
+    g.value = g.value/40;
 }

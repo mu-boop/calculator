@@ -1,0 +1,27 @@
+[debug] [2021-01-25T14:16:24.713Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T14:16:24.717Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shahbaz Ali\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-25T14:16:24.717Z] CLI Version:   9.1.0
+[debug] [2021-01-25T14:16:24.717Z] Platform:      win32
+[debug] [2021-01-25T14:16:24.718Z] Node Version:  v14.15.3
+[debug] [2021-01-25T14:16:24.719Z] Time:          Mon Jan 25 2021 19:16:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-01-25T14:16:24.719Z] ----------------------------------------------------------------------
+[debug] [2021-01-25T14:16:24.719Z] 
+[debug] [2021-01-25T14:16:24.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-25T14:16:24.731Z] > authorizing via signed-in user
+[debug] [2021-01-25T14:16:24.731Z] [iam] checking project mugheesassignment for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-25T14:16:24.736Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-25T14:16:24.736Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-25T14:16:25.103Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 25 Jan 2021 14:16:25 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T14:16:25.203Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mugheesassignment:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-25T14:16:26.704Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 25 Jan 2021 14:16:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1220","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-25T14:16:26.708Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mugheesassignment  
+ 
+[debug] [2021-01-25T14:16:27.318Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 25 Jan 2021 14:16:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mugheesassignment'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-01-25T14:16:27.332Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mugheesassignment/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
