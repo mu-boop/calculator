@@ -27,7 +27,14 @@ function minus(){
     var f = document.getElementById("input");
 }
 
-function zakat(){
-    var g = document.getElementById("input");
-    g.value = g.value/40;
+// function zakat(){
+//     var g = document.getElementById("input");
+//     g.value = g.value/40;
+// }
+
+function delet(){
+    var clearButton = document.getElementById("input").value;
+    clearButton = clearButton.substr(0,clearButton.length-1);
+    document.getElementById("input").value = clearButton;
+    
 }
